@@ -1,0 +1,68 @@
+/*STYLING FOR NAVBAR EXCLUSIVELY*/
+
+/*styling of the container*/
+.headerView {
+  display: flex;
+  flex-direction: column;
+  padding: 1vw;
+  background-color: #1e293b;
+}
+
+/*styling the heading*/
+.heading {
+  color: white;
+  text-align: center;
+}
+
+/*styling the row containing the buttons*/
+.navbar {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+}
+
+/*styling the buttons themselves (not the links)*/
+.navButton {
+  padding: 5px;
+  margin: 5px;
+  border: none;
+  border-radius: 8px;
+  background-color: #3b82f6;
+  box-shadow: 0 4px #3b619f;
+  transition: 0.2s;
+}
+/*styling the buttons for when the cursor is hovering
+over them*/
+.navButton:hover {
+  filter: brightness(1.3);
+}
+/*styling the buttons for when the button is clicked -->
+giving the effect of a button being pressed in and released*/
+.navButton:active {
+  box-shadow: 0 2px #3b619f;
+  transform: translateY(1px);
+}
+
+/*styling the links inside the buttons*/
+.nav_link {
+  color: white;
+  text-decoration: none;
+}
+
+/*RESOURCES:*/
+
+/*Name of webpage: The right way to implement pressed button effect in CSS*/
+/*Name of website: Stack Overflow*/
+/*Reason: I wanted to see how I could make my buttons look like they have been pushed*/
+/*URL: https://stackoverflow.com/questions/76751322/the-right-way-to-implement-
+pressed-button-effect-in-css */
+
+/*Name of webpage: How to Remove Underline from Link in CSS*/
+/*Name of website: Coreui*/
+/*Type of source: Blog*/
+/*Author: Łukasz Holeczek*/
+/*Release date: 13/07/2024*/
+/*Reason: I wanted to see how I could remove the underline from the links*/
+/*URL: https://coreui.io/blog/how-to-remove-underline-from-link-in-css/ */

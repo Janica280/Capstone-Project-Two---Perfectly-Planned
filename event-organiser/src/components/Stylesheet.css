@@ -1,0 +1,178 @@
+/*Component Containers*/
+.landingContainer,
+.registerContainer,
+.loginContainer,
+.dashboardContainer,
+.addChangeEventContainer,
+.helpContainer {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 2vw;
+  margin: auto;
+  border: 0.2vw solid #1e293b;
+  border-radius: 10px;
+  background-color: #f4f7f9;
+  gap: 10px;
+}
+
+/**********************************************************************************/
+
+/*LandingPage exclusive*/
+
+/*styling the row where the LandingPage buttons are located*/
+.landingButtonRow {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+/*styling the buttons on the LandingPage*/
+.landingButton {
+  background-color: #3b82f6;
+  color: white;
+  box-shadow: 0 4px #3b619f;
+  padding: 5px;
+  margin: 5px;
+  border: none;
+  border-radius: 8px;
+  height: 40px;
+  width: 130px;
+  transition: 0.2;
+}
+
+/**********************************************************************************/
+
+/*Help Page exclusive*/
+
+/*styling the Help heading*/
+.helpHeading {
+  color: #334155;
+  text-align: center;
+}
+
+/*styling the help container*/
+.helpContainer {
+  text-align: left;
+}
+
+/*styling the navigation links*/
+.helpNav {
+  text-decoration: none;
+  color: #1e293b;
+  font-weight: bold;
+}
+/*styling the navigation links to appear different when a 
+cursor is hovering over them, to indicate to users that
+they are in fact clickable links*/
+.helpNav:hover {
+  color: #3b619f;
+}
+
+/**********************************************************************************/
+
+/*RenderEvents exclusive*/
+
+/*styling the container for the category timeframes*/
+.eventCategoryContainer {
+  padding: 1vw;
+  border: 1px solid #82adf382;
+  border-radius: 8px;
+}
+
+/*styling the individual event cards*/
+.eventCard {
+  background-color: #c7d8f1;
+  border-left: 2px solid #3b619f;
+  border-right: 2px solid #3b619f;
+  border-bottom: 2px solid #3b619f;
+  padding: 0.3vw;
+  border-radius: 8px;
+  text-align: left;
+}
+
+/*styling the container containing the buttons inside
+the event cards*/
+.eventCardButtons {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: right;
+}
+
+/*styling the buttons inside the event cards*/
+.renderEventsButton {
+  background-color: #3b82f6;
+  color: white;
+  box-shadow: 0 4px #3b619f;
+  padding: 0.3vw;
+  margin: 0.3vw;
+  border: none;
+  border-radius: 8px;
+  height: 30px;
+  width: 60px;
+  transition: 0.2s;
+}
+
+/**********************************************************************************/
+
+/*styling across various components*/
+
+/*styling for the headings*/
+.heading {
+  color: white;
+  text-align: center;
+}
+
+/*styling for buttons*/
+.registerButton,
+.loginButton,
+.addEventButton,
+.submitEvent {
+  background-color: #3b82f6;
+  color: white;
+  box-shadow: 0 4px #3b619f;
+  padding: 5px;
+  margin: 5px;
+  border: none;
+  border-radius: 8px;
+  height: 35px;
+  width: 100px;
+  transition: 0.2s;
+}
+/*styling the buttons when a cursor hovers over them*/
+.registerButton:hover,
+.loginButton:hover,
+.addEventButton:hover,
+.submitEvent:hover,
+.renderEventsButton:hover {
+  filter: brightness(1.3);
+}
+/*styling buttons to have the push-in effect when they
+are pressed*/
+.registerButton:active,
+.loginButton:active,
+.addEventButton:active,
+.submitEvent:active,
+.renderEventsButton:active {
+  box-shadow: 0 2px #3b619f;
+  transform: translateY(1px);
+}
+
+/*styling for labels and inputs*/
+.registrationLabels,
+.registrationInput,
+.loginLabels,
+.loginInput,
+.eventLabel,
+.eventInput {
+  text-align: left;
+}
+
+/*styling the column containing the importance radio buttons*/
+#eventImportance {
+  display: flex;
+  gap: 10px;
+}
